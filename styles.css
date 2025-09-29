@@ -1,0 +1,229 @@
+/* ===== ESTILOS GENERALES Y RESET ===== */
+
+/* Reset básico para eliminar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    /* El box-sizing border-box incluye padding y border en el ancho/alto total */
+    box-sizing: border-box;
+    /* Fuente principal para todo el documento */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+/* Contenedor principal que centra el contenido y establece ancho máximo */
+.container {
+    max-width: 1100px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* ===== ENCABEZADO Y PERFIL ===== */
+
+/* Estilos del encabezado principal */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db); /* Degradado azul */
+    color: white; /* Texto blanco */
+    padding: 40px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados solo abajo */
+    margin-bottom: 30px; /* Espacio debajo del header */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Contenedor flexible para la sección de perfil */
+.profile-container {
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en móviles */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Contenedor para la imagen de perfil */
+.profile-img {
+    width: 150px; /* Ancho fijo */
+    height: 150px; /* Alto fijo */
+    border-radius: 50%; /* Hace la imagen circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+    border: 5px solid rgba(255,255,255,0.3); /* Borde blanco semi-transparente */
+}
+
+/* Estilos para la imagen dentro del contenedor */
+.profile-img img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa todo el alto del contenedor */
+    object-fit: cover; /* Ajusta la imagen manteniendo proporciones */
+}
+/* Contenedor para la información de perfil */
+.profile-info {
+    max-width: 600px; /* Ancho máximo para mejor legibilidad */
+}
+
+/* Estilos para el nombre principal */
+h1 {
+    font-size: 2.5rem; /* Tamaño grande */
+    margin-bottom: 10px; /* Espacio debajo */
+}
+
+/* Párrafo debajo del nombre */
+.profile-info p {
+    font-size: 1.2rem; /* Tamaño de texto aumentado */
+    margin-bottom: 15px; /* Espacio debajo */
+}
+
+/* Contenedor flexible para información de contacto */
+.contact-info {
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap; /* Permite envolver en móviles */
+    gap: 15px; /* Espacio entre items */
+    margin-top: 15px; /* Espacio arriba */
+    justify-content: center; /* Centra los items */
+}
+
+/* Cada item individual de contacto */
+.contact-item {
+    display: flex; /* Alinea icono y texto */
+    align-items: center; /* Centra verticalmente */
+    gap: 8px; /* Espacio entre icono y texto */
+}
+
+/* Estilo para los iconos */
+.icon {
+    font-size: 1.1rem; /* Tamaño ligeramente aumentado */
+}
+
+/* ===== SECCIONES DE CONTENIDO ===== */
+
+/* Estilos para cada sección de contenido */
+.section {
+    background-color: white; /* Fondo blanco */
+    padding: 25px; /* Espaciado interno */
+    margin-bottom: 25px; /* Espacio entre secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Títulos de sección (h2) */
+h2 {
+    font-size: 1.8rem; /* Tamaño de fuente */
+    color: #2c3e50; /* Color azul oscuro */
+    margin-bottom: 15px; /* Espacio debajo */
+    padding-bottom: 5px; /* Espacio para la línea inferior */
+    border-bottom: 2px solid #3498db; /* Línea decorativa azul */
+}
+
+/* Subtítulos (h3) */
+h3 {
+    font-size: 1.3rem; /* Tamaño de fuente */
+    color: #3498db; /* Color azul */
+    margin: 15px 0 10px; /* Márgenes superior e inferior */
+}
+
+/* ===== SECCIÓN DE EDUCACIÓN ===== */
+
+/* Cada item educativo individual */
+.education-item {
+    margin-bottom: 20px; /* Espacio entre items educativos */
+}
+
+/* Estilo para fechas */
+.date {
+    color: #7f8c8d; /* Color gris */
+    font-style: italic; /* Texto en cursiva */
+}
+
+/* ===== SECCIÓN DE EXPERIENCIA LABORAL ===== */
+
+/* Cada item de experiencia laboral */
+.experience-item {
+    margin-bottom: 25px; /* Espacio entre experiencias */
+}
+
+/* Listas no ordenadas */
+ul {
+    padding-left: 20px; /* Sangría para la lista */
+    margin: 10px 0; /* Márgenes superior e inferior */
+}
+
+/* Items de lista */
+li {
+    margin-bottom: 5px; /* Espacio entre items de lista */
+}
+
+/* ===== SECCIÓN DE CAPACITACIONES ===== */
+
+/* Cada item de capacitación */
+.training-item {
+    margin-bottom: 15px; /* Espacio entre capacitaciones */
+}
+
+/* ===== TABLA DE REFERENCIAS ===== */
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+    margin-top: 15px; /* Espacio arriba de la tabla */
+}
+
+/* Celdas de encabezado y datos */
+th, td {
+    padding: 12px 15px; /* Espaciado interno */
+    text-align: left; /* Alineación izquierda */
+    border-bottom: 1px solid #ddd; /* Línea inferior gris */
+}
+
+/* Encabezados de tabla */
+th {
+    background-color: #3498db; /* Fondo azul */
+    color: white; /* Texto blanco */
+}
+
+/* Filas pares con fondo alternado */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo gris muy claro */
+}
+
+/* ===== DISEÑO RESPONSIVE ===== */
+
+/* Media query para tablets y móviles */
+@media (max-width: 768px) {
+    /* En móviles, el perfil se muestra en columna */
+    .profile-container {
+        flex-direction: column; /* Apila elementos verticalmente */
+        text-align: center; /* Centra el texto */
+    }
+    
+    /* Ajusta tamaño de fuente en móviles */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Contacto en columna en móviles */
+    .contact-info {
+        flex-direction: column; /* Apila items verticalmente */
+        align-items: center; /* Centra los items */
+    }
+    
+    /* Permite scroll horizontal en tablas en móviles */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    /* Reduce padding en secciones para móviles */
+    .section {
+        padding: 15px;
+    }
+}
